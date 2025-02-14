@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Javascript Array.sort(function(a,b){ return b-a ; })</h1>
+    <p>this function sort an array by descending order</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatype
+        let arr = [5,8,2,12,3];
+
+        // define sort of arr array variable in a variable
+        let output = arr.sort(function(a,b) {
+            return b - a;   // it sort descending order
+        })     
+
+        // print to console and document
+        console.log(output);
+        document.getElementById("demo").innerHTML = output;
+
+    </script>
+
+
+</body>
+</html>

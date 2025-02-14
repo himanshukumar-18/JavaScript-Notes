@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript Array.splice</h1>
+    <p>we can also remove elem from an assay using splice method</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatype
+        let arr = ["Atanu's", "Coder", "Dream City", 5];
+
+        // use splice method for remove elem in arr variable
+        arr.splice(2, 1); // here "2" is where(index) you want to add this elem, and "1" is how many elem you want to remove
+        // here index no "2" to "1" element removed
+
+        // print to console and document
+        console.log(arr);
+        document.getElementById("demo").innerHTML = arr;
+
+    </script>
+
+
+
+</body>
+</html>

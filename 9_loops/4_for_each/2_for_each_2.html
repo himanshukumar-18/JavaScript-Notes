@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>For Each Loop</h1>
+    <p>It Create a loop on each element of an array</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define a array variable
+        let arr = ["HTML", "CSS", "JS", "ReactJS", "PHP"]
+        
+        // forEach is a mathod and inside this function there is another callback function with parameter/value for print this value 
+        arr.forEach(function(val,index,arr){
+
+            // print to console and document
+            console.log(val,index,arr);
+            document.getElementById("demo").innerHTML += `${val}, ${index}, ${arr}, <br>`;
+
+        })
+
+
+
+    </script>
+
+
+
+</body>
+</html>

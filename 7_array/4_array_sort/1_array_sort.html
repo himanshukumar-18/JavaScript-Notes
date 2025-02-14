@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Javascript Array.sort()</h1>
+    <p>this function sort an array by ascending order</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatypes
+        let arr = ["Ball", "Dog", "Apple", "Egg", "Cat"];
+        let arr2 = [5,8,2,12,3];
+
+        // define sort of arr array variable in a variable
+        let output = arr.sort()     // it sort ascending order
+        let output2 = arr2.sort()     // it sort ascending order
+
+        // print to console and document
+        console.log(output);
+        console.log(output2);
+        document.getElementById("demo").innerHTML = output + "<br>" +output2;
+
+    </script>
+
+
+</body>
+</html>

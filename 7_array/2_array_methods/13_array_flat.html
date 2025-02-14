@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript array flat()</h1>
+    <p>It create a new array with sub array elements inside an array variable</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many sub array
+        let arr = [["A","B"], ["C","D"], ["E","F"], ["G","H"]];
+
+        // define falt method in a variable
+        let newArr = arr.flat();   // marge all the sub array in a main array
+
+        // print to console and document
+        console.log(newArr);
+        document.getElementById("demo").innerHTML = newArr;
+
+    </script>
+
+
+
+</body>
+</html>

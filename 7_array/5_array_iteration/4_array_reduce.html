@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript Array.reduce</h1>
+    <p>Find the sum of all number inside array variable</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatypes
+        let arr = [2, 5, 9, 13];
+
+        // use reduce() with function to arr variable it store into a variable
+        let output = arr.reduce(function(total, value, index, array) {
+            return total + value
+        });
+
+        // print to console and document
+        console.log(output);
+        console.log(arr);
+        document.getElementById("demo").innerHTML = output;
+
+    </script>
+
+
+
+</body>
+</html>

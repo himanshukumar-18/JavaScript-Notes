@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Alert Box (Popup)</h1>
+    <p>It is use for verify or accept something by users</p>
+    
+    <button onclick="abc()">Click me to get popup</button>
+
+
+    <script>
+
+        // use confirm method inside a function
+        // when user click button the function is executed
+        function abc() {
+            if(confirm("Do you want to continue !")){
+                console.log("Continued..")
+            }
+            else{
+                console.log("Cancel !");
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

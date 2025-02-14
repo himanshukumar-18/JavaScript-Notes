@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Set Timeout</h1>
+    <p>Run some event after given time in setTimeout</p>
+
+    
+    <script>
+
+        // inside this setTimeout there is 2 parameaters we can use, first is handler(its besically a callback function) and second is time(after how much time the handler will be executed)
+        setTimeout(function(){
+            console.log("Atanu");
+        }, 2000);   // the number is time in milisecond
+
+
+        // we can also call any predefined function inside this setTimeout method
+        function abc(){
+            console.log("Set Timeout Method !");
+        };
+
+        // use only name of function in handler position , don't call the funcion "abc()" if you call function the code is execute immediate
+        setTimeout(abc,2000);
+
+    </script>
+
+</body>
+</html>

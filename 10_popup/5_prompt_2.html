@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Alert Box (Popup)</h1>
+    <p>It is use for get any data from user</p>
+
+    <button onclick="abc()">Click me to get popup</button>
+
+
+    <script>
+
+
+        function abc() {
+
+            // inside this prompt method there is two thing we can use, first is question, and second is input field placeholder
+            let popup = window.prompt("Enter Your Age", "");
+            if (popup >= 18) {
+                console.log("You are eligible")
+            }
+            else {
+                console.log("Your are not eligible")
+            }
+
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

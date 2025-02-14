@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>For In Loop on Object</h1>
+    <p>It Create a loop on an object</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define an object variable
+        let obj = {
+            insName : "Atanu's Coder",
+            location : "Dream World",
+            student : 5,
+        }
+
+        // define a blank variable for store output data
+        let output = "";
+
+        // here key is a variable of this loop, and "in obj" mean loop is run on obj variable
+        // here no need to increment or decrement value
+        for (const key in obj) {
+
+            output += key + " : " + obj[key] + "<br>";
+
+
+            // print to console and document
+
+            // console.log(key);   // it only print key name 
+            console.log(key + " : " + obj[key]);     // for print value of key both use "obj[key]"
+            document.getElementById("demo").innerHTML = output;
+            
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

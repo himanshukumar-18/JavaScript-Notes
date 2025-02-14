@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>For Loop</h1>
+    <p>It Create a loop with expressions</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+        // define a array variable
+        let arr = ["Atanu's", "Coder", "Dream", "City"]
+
+        // define a blank variable for store loop data
+        let text = "";
+
+        // here i is a variable(form where loop is started), "i<=10" means it run upto 10, "i++" mean increment the value one by one
+        for (let i = 0; i < arr.length; i++) {
+            
+            let output =  arr[i];
+
+            // print to console and document 
+            console.log(output);
+            text = text + output + "<br>";
+            document.getElementById("demo").innerHTML = text;
+            
+            
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

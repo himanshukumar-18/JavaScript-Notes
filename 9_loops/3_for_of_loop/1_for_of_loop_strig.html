@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>For Of Loop</h1>
+    <p>It Create a loop on an object(Most use in Array)</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define a string variable
+        let str = "Atanu's Coder"
+
+        // define a blank variable for store output data
+        let output = "";
+
+        // here val is a variable of this loop, and "of str" mean loop is run on str variable
+        // here no need to increment or decrement value
+        for (const val of str) {
+
+            // store data output variable
+            output += val + "<br>";
+
+            // print to console and document
+            console.log(val);
+            document.getElementById("demo").innerHTML = output;
+            
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

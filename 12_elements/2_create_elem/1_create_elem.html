@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ctrete Element</h1>
+    
+
+
+    <script>
+
+        let body = document.querySelector("body");
+
+        let newElem = document.createElement("h1");
+
+        // it only use when the value is already exist and overwrite it
+        // elem.inneHTML = "<h1>JavaScript</h1>";
+
+
+        let newTxt =document.createTextNode("JavaScript")
+        newElem.appendChild(newTxt)
+
+
+        console.log(newElem)
+
+        body.appendChild(newElem)
+
+    </script>
+
+</body>
+</html>

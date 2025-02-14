@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>String Concat</h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+
+    <script>
+
+        // store multiple string variable
+        let para1 = "Web";
+        let para2 = "Developer";
+
+        // store element from HTML into a variable
+        let demo = document.getElementById("demo");
+        let demo2 = document.getElementById("demo2");
+
+        // define concat of para1 and para2 into a variable
+        let output = para1.concat(para2);
+        // it is used for join multiple string
+
+        // for add gap between two text
+        let output2 = para1.concat(" ", para2);
+
+        // print to console and document
+        console.log(output);
+        console.log(output2)
+        demo.innerHTML = output;
+        demo2.innerHTML = output2;
+
+
+    </script>
+
+
+</body>
+</html>

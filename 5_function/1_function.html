@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Function</h1>
+    <p>In this function we will perform a calculetion and return the result</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // syntax of function,     inside the bracket this value call parameter(it is a variable for function, which receive input value)
+        function functionName(a,b) {
+            return a * b;
+            // it's return  hold the output value of this function
+        }
+
+
+        // call function with parameters(variables) and it store in a variable
+        let output =  functionName(2,6);
+
+        // print output to console and document
+        console.log(output);
+        document.getElementById("demo").innerHTML = output
+
+
+
+    </script>
+
+    
+</body>
+</html>

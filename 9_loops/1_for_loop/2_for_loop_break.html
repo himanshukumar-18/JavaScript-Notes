@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>For Loop Break</h1>
+    <p>when the condition is true It will Break the loop </p>
+    <p id="demo"></p>
+
+
+
+    <script>
+        
+        // define a blank variable for store loop data
+        let text = "";
+
+        // here i is a variable(form where loop is started), "i<=10" means it run upto 10, "i++" mean increment the value one by one
+        for (let i = 0; i <= 10; i++) {
+            
+            // create a condition for indetify the number and break this loop
+            if(i==5){
+                console.log("5 is Here")
+                break; // break the loop when the condition is true
+            }
+
+            // print to console and document 
+            console.log(i);
+            text = text + i + "<br>";
+            document.getElementById("demo").innerHTML = text
+            
+            
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

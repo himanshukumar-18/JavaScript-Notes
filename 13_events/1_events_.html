@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Events in JavaScript</h1>
+
+    <img id="image" src="https://images.stockcake.com/public/1/8/0/180d3f37-39ef-485b-ab37-832106320143_medium/man-touching-clock-stockcake.jpg" alt="">
+
+
+    <h1>Event Propagation</h1>
+
+    <ul>
+
+        <li>
+            <img src="https://images.stockcake.com/public/c/7/5/c750d15b-eac3-4543-8cc1-c91d07737bc3_medium/mystical-forest-floor-stockcake.jpg" alt="">
+        </li>
+        <li>
+            <img id="pic" src="https://s.cafebazaar.ir/images/icons/love.dp.images-544f3dff-b0fe-4c7b-bbca-7e37ffdc5e45_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize" alt="">
+        </li>
+        <li>
+            <img src="https://images.stockcake.com/public/0/a/4/0a4e15bd-38ef-48eb-8785-9f2f6c6e0d27_medium/global-cultural-fusion-stockcake.jpg" alt="">
+        </li>
+
+    </ul>
+
+
+
+    <script>
+
+        // do not use this method
+        // document.getElementById("image").onclick = function() {
+        //     console.log("Clicked")
+        // }
+
+
+        // inside the addEventListener function there is three parameaters, first is event, second is a function, last is false(defult)
+        document.getElementById("image").addEventListener("click", function(e){     // inside this function parameater
+
+            // inside this function we can add all activities for particular event
+            console.log(e);     
+
+        }, false)       // we don't need to add false when we use default case
+
+
+
+        // Event propagation is 2 types = capturing(true) and bubbling(false)(default)
+
+
+        // Bubbling (it work from down to up side of dom tree, thats why "pic clicked" execute first)
+        // document.querySelector("ul").addEventListener("click", function(){
+        //     console.log("ul clicked")
+        // }, false);
+
+        // document.getElementById("pic").addEventListener("click", function(){
+        //     console.log("pic clicked")
+        // }, false)
+
+
+        // Capturing (it work from up to down side of dom tree, thats why "ul clicked" execute first)
+        document.querySelector("ul").addEventListener("click", function(){
+            console.log("ul clicked")
+        }, true);
+
+        document.getElementById("pic").addEventListener("click", function(){
+            console.log("pic clicked")
+        }, true)
+
+
+    </script>
+
+</body>
+</html>

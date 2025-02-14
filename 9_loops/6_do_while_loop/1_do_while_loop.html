@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Do While Loop</h1>
+    <p>It create a loop first, then check the condition, and inside the block state it's value must be increase </p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define a variable with initial value 
+        let index = 0;
+
+        let output = "";
+
+        // create do while loop
+        do {
+
+            // print to consolr and document
+            console.log(`The Number is ${index}`);
+
+            output += `The Number is ${index}` + "<br>";
+            document.getElementById("demo").innerHTML = output;
+
+            index++;    // increment the value of index one by one
+
+
+        } while (index <= 10); // after code execution it check the condition
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <h1>Javascript Object</h1>
+    <p>It hold many properties(key) with their values, & we can call the value with property(key) name with another way</p>
+    <p id="demo"></p>
+
+
+    <script>
+
+        // define object variable 
+        let institute = {
+
+            // property(key) : value 
+            insName : "Atanu's Coder",
+            location : "Dream World",
+            student : 5,
+
+        }
+
+        // we can also create a variable for call above object key or property 
+        let a = "insName";
+        let b = "location";
+        let c = "student";
+
+
+        // print to console and document 
+        console.log("The name of the institute is " + institute[a] + ", It is loacted in " + institute[b] + " & there are total " + institute[c] + " students.");
+        document.getElementById("demo").innerHTML = "The name of the institute is " + institute[a] + ", It is loacted in " + institute[b] + " & there are total " + institute[c] + " students.";
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event preventDefault</h1>
+    <p>It is use for remove default function of any method</p>
+
+    <a href="https://google.com/">Go to Google</a>
+
+    <script>
+
+        document.querySelector("a").addEventListener("click", function(e) {
+            e.preventDefault();     // after add this function we can't redirect to another page after click link
+        })
+
+    </script>
+
+</body>
+</html>

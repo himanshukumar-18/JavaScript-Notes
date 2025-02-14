@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Set Interval</h1>
+    <p>Run some event repeatedly according to given time in setInterval</p>
+
+
+
+
+    <script>
+
+        // inside this setInterval there is 2 parameaters we can use, first is handler(its besically a callback function) and second is time(after how much time the handler will be executed)
+        setInterval(function () {
+
+            console.log("print !")
+
+        }, 1000);
+
+
+        // we can also call any predefined function inside this setInterval method
+        function abc() {
+            console.log("Set Interval Method !");
+        };
+
+        // use only name of function in handler position , don't call the funcion "abc()" if you call function the code is execute immediate
+        setInterval(abc, 1000);
+
+
+    </script>
+
+</body>
+
+</html>

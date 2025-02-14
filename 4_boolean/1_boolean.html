@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Boolean</h1>
+    <p>It return True and False value</p>
+    <p id="demo"></p>
+
+
+    <script>
+
+        // define variable 
+        let b1 = Boolean(400);
+        let b2 = Boolean(4.35);
+        let b3 = Boolean(-45);
+        let b4 = Boolean("String");
+        let b5 = Boolean('false');
+        let b6 = Boolean(5 + 8 + 2.5);
+
+
+        // print to document and console
+        document.getElementById("demo").innerHTML = b1 + "<br>" + b2 + "<br>" + b3 + "<br>" + b4 + "<br>" + b5 + "<br>" + b6;
+        console.log(b1);
+        console.log(b2);
+        console.log(b3);
+        console.log(b4);
+        console.log(b5);
+        console.log(b6);
+
+    </script>
+
+</body>
+</html>

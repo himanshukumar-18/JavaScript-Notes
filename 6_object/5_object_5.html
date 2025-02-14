@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <h1>Javascript Object</h1>
+    <p>we can add a function inside object variable</p>
+    <p id="demo"></p>
+
+
+    <script>
+
+        // define object variable 
+        let instituteName = {
+
+            // property(key) : value 
+            firstName : "Atanu's Coder",
+            lastName : "Dream World",
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            },
+
+        }
+
+
+        // print to console and document 
+        console.log("The name of the institute is " + instituteName.fullName());
+        document.getElementById("demo").innerHTML = "The name of the institute is " + instituteName.fullName();
+
+
+
+    </script>
+
+
+</body>
+</html>

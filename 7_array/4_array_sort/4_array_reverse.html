@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Javascript Array.reverse()</h1>
+    <p>this function reverse the elem of inside array</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatypes
+        let arr = ["Ball", "Dog", "Apple", "Egg", "Cat"];
+        let arr2 = [5,8,2,12,3];
+
+        // define reverse of arr array variable in a variable
+        let output = arr.reverse()     // it reverse array elem
+        let output2 = arr2.reverse()     // it reverse array elem
+
+        // print to console and document
+        console.log(output);
+        console.log(output2);
+        document.getElementById("demo").innerHTML = output + "<br>" +output2;
+
+    </script>
+
+
+</body>
+</html>

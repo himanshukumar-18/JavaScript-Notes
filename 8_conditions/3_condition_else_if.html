@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>If Else Condition</h1>
+    <p>It create a condition, if the number is grater than 10 then print "High",or same then print "equal", or less than 10 then print "low"</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define variables
+        let num = 10;
+        let output = "";  // it's a blank variable, where store the condition output data
+
+        // condition 1 : the condition return true and false, if the condition 1 is true then this code is executed
+        if(num > 10) {
+            output = "High";
+        }
+
+        // condition 2 : the condition return true and false, if the condition 1 is false then condition 2 code is executed
+        else if(num == 10) {
+            output = "Equal";
+        }
+
+        // the condition return true and false, if the both conditions are false then this code is executed
+        else {
+            output = "Low";
+        }
+
+        // print to console and document
+        console.log(output);
+        document.getElementById("demo").innerHTML = output;
+
+    </script>
+
+</body>
+</html>

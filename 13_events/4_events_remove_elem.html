@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Remove Elem Project with click event</h1>
+
+
+    <ul>
+
+        <li>
+            <img src="https://images.stockcake.com/public/c/7/5/c750d15b-eac3-4543-8cc1-c91d07737bc3_medium/mystical-forest-floor-stockcake.jpg" alt="">
+        </li>
+        <li>
+            <img id="pic" src="https://s.cafebazaar.ir/images/icons/love.dp.images-544f3dff-b0fe-4c7b-bbca-7e37ffdc5e45_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize" alt="">
+        </li>
+        <li>
+            <img src="https://images.stockcake.com/public/0/a/4/0a4e15bd-38ef-48eb-8785-9f2f6c6e0d27_medium/global-cultural-fusion-stockcake.jpg" alt="">
+        </li>
+
+    </ul>
+
+
+    <script>
+
+        document.querySelector("ul").addEventListener("click", function(e){
+
+            console.log(e.target); 
+            console.log(e.target.tagName); 
+            // we have to remove li thats why we use parentNode for selecting li elem from img(target elem)
+            console.log(e.target.parentNode); 
+            
+            let del = e.target.parentNode;
+            // del.remove();
+
+            // but there is a bug aftr click li whole ul is removed so we can fix it using condition
+
+            if(e.target.tagName === "IMG") {
+                del.remove();
+            }
+
+        })
+
+    </script>
+
+
+</body>
+</html>

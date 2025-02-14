@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript Array.find()</h1>
+    <p>It returns the first elem that is larger than 9</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatype
+        let arr = [2, 5, 9, 13];
+
+        // use find() with function to arr variable it store into a variable
+        let output = arr.find(functionName);
+
+        // function creation
+        function functionName(value, index, array) {
+            return value > 5;
+        }
+
+        // print to console and document
+        console.log(output)
+        document.getElementById("demo").innerHTML = output;
+
+    </script>
+
+
+
+</body>
+</html>

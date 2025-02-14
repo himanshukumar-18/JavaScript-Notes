@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>String Slice</h1>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // store a string into a variable
+        let para="I am a Web Developer";
+
+        // store element from HTML into a variable
+        let demo = document.getElementById("demo");
+
+        // define slice of para in a variable
+        let sliceText = para.slice(8);   // to index 8 is sliced
+        // it return after 8 index 
+
+        // print to document and console
+        demo.innerHTML = sliceText;
+        console.log(sliceText);
+        
+    </script>
+
+
+</body>
+</html>

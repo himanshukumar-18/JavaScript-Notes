@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript Array.slice</h1>
+    <p>It cut the elem from starting of an array and create a new array variable</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatype
+        let arr = ["Atanu's", "Coder", "Dream City", 5];
+
+        // use slice method cut out data from arr variable store into a variable
+        let output = arr.slice(2); // here "2" elem are sliced from starting of array
+
+        // print to console and document
+        console.log(arr)
+        console.log(output);
+        document.getElementById("demo").innerHTML = output;
+
+    </script>
+
+
+
+</body>
+</html>

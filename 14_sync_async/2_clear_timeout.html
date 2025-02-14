@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Set Timeout</h1>
+    <p>Run some event after given time in setTimeout</p>
+    
+    <button>Click me to stop print</button>
+
+
+    <script>
+
+        let clear = setTimeout(function () {
+            console.log("print !")
+        }, 2000)
+
+        document.querySelector("button").addEventListener("click", function() {
+
+            console.log("Stopped")
+
+            // for use clearTimeout we have to pass a referance(variable) inside this method, we can set setTimeout method in a variable and pass the referance 
+            clearTimeout(clear);
+
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

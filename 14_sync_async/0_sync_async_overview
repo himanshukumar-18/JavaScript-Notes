@@ -1,0 +1,26 @@
+>> Synchronous : It's mean run all the codes one by one, after complete previous code next code will be execute
+
+>> Asynchronous : It's mean run all the codes together, which code complete first, this code will be execute first
+
+
+
+
+
+>> In default JavaScript is a Synchronous or Single Thrated Language.
+    ** its mean it work one by one given by the order.
+
+
+>> Execution Context
+    ** Execute one line of code at a time
+
+    example : (each line of code wait for the print last one, after that next line will be execute)
+                console.log("one")  // Print first
+                console.log("two")  // after print one this line will execute
+
+
+
+>> Blocking code (Synchronous)
+    ** Block the flow of programme
+
+>> Non Blocking Code (Asynchronous)
+    ** do not block execution

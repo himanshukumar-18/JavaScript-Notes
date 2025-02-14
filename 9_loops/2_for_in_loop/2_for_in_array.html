@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>For In Loop on Array</h1>
+    <p>It Create a loop on an Array</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define array variable
+        let arr = [1, 2, 3, 4, 5]
+
+        // define a blank variable for store output data
+        let output = "";
+
+        // here key is a variable of this loop, and "in arr" mean loop is run on arr variable
+        // here no need to increment or decrement value
+        for (const key in arr) {
+
+            output += key + " : " + arr[key] + "<br>";
+
+
+            // print to console and document
+
+            // console.log(key);   // it only print key name 
+            console.log(key + " : " + arr[key]);     // for print value of key use "arr[key]"
+            document.getElementById("demo").innerHTML = output;
+            
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

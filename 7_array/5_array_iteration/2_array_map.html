@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Javascript Array Map Method</h1>
+    <p>It create a new array from existing array with some changes of each elem</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatypes
+        let arr = [5,8,2,12,3];
+ 
+        // use map method to arr variable and it store into a ouptut(new) variable
+        let output = arr.map(function(value, index, array){
+                return value * 2;
+        })
+
+
+        // print to console and document
+        console.log(output);
+        console.log(arr);
+        document.getElementById("demo").innerHTML = output;
+
+    </script>
+
+
+</body>
+</html>

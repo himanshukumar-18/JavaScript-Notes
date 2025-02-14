@@ -1,0 +1,9 @@
+= Assign Operator
++ Addition Operator
+- Subtraction Operator
+* Multiplication Operator
+/ Division Operator
+% Modulus Operator(Reminder of division)
+** Exponential Operator(Power of a number)
+++ Increment Operator
+-- Decrement Operator

@@ -1,0 +1,9 @@
+== Equal to
+=== Equal Value and Type
+!= Not Equal to
+!== Not Equal Value or Not Equal Type
+> Greater Than
+< Less Than
+>= Greater Than and Equal to
+<= Less Than and Equal to
+? Ternary Operator(like if else)

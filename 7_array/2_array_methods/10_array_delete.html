@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript delete array[indexNo]</h1>
+    <p>It delete elem of the given indexNo. of array variable, and on this area it value change to undefined.</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatypes
+        let arr = ["Atanu's", "Coder", "Dream City", 5];
+
+        // define delete method of arr variable
+        delete arr[0];   // it delete the elem of indexNo 0 , and this value change to undefined
+
+        // print to console and document
+        console.log(arr);
+        document.getElementById("demo").innerHTML = arr;
+
+        console.log(arr[0]); // output is undefined
+
+    </script>
+
+
+
+</body>
+</html>

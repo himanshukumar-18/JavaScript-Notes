@@ -1,0 +1,31 @@
+API : Application Programming Interface
+
+>> besically it is use for 2 purpose
+    1.  Talk between two other Programming language
+
+            Ex : Suppose, one website frontend written in JS but backend written in Python,
+                 How python and Js Talk each other !!
+                 ** The method of talk between two other language call API
+
+
+
+    2.  Take other data for use in my own Application
+
+            Ex : Suppose, you want to create a weather app, for create this you have to need a satellite, but you don't have it,
+                 So, you have to use other satellite data in your application.
+                 ** The data you can access with API
+
+            Ex2 : when we sign up in many application , we can see there is an option of google login, It's also an API
+
+
+
+
+
+API example:
+     1. https://api.github.com/users/atanuray2001
+     2. https://randomuser.me/
+
+
+** for read api proprtly we will use 
+     https://jsonformatter.org/
+     https://randomuser.me/api/

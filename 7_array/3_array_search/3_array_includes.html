@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript Array.includes()</h1>
+    <p>It return True and False, It is use for checking array elem, it present or not</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatype
+        let arr = ["Atanu's", "Coder", "Dream City", "Coder", 5];
+
+        // use includes() method ans store into variables
+        let output = arr.includes("Coder");  // it's present(True)
+        let output2 = arr.includes("hacker"); // it's not present(false)
+
+        // print to console and document
+        console.log(output);
+        console.log(output2);
+        document.getElementById("demo").innerHTML = output;
+        document.getElementById("demo2").innerHTML = output2;
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading" class="text">DOM (Document Object Model)</h1>
+
+
+
+    <script>
+
+        // try all this code in console
+
+        // it's an ID selector store into a variable
+        let heading = document.getElementById("heading");
+        
+        // it's a Class selector store into a variable
+        let headingClass = document.getElementsByClassName("heading");
+
+        // find class name
+        heading.className;
+
+        // find id
+        heading.id;
+
+        // get class name
+        heading.getAttribute("class");
+
+        // set class name
+        heading.setAttribute("class", "new-class");
+
+        // apply css
+        heading.style.backgroundColor = "red";
+
+        /* below 3 methods are similar, but there is some difference 
+
+            textContent = it shows all texts inside this heading elem
+            innerText = it shows only visible texts inside this heading elem
+            innerHTML = it shows all elements inside this heading elem
+
+        */
+        heading.textContent;
+        heading.innerHTML;
+        heading.innerText;
+    </script>
+
+
+
+</body>
+</html>

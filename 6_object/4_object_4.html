@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <h1>Javascript Object</h1>
+    <p>after define object variable We can add other key and value with this format</p>
+    <p id="demo"></p>
+
+
+    <script>
+
+        // define empty object variable 
+        let institute = {}
+
+        // fill the pre defined empty object variable 
+        // objectVariableName = property(key) = value 
+        institute.insName = "Atanu's Coder";
+        institute.location = "Dream World";
+        institute.student = 5;
+
+
+
+        // print to console and document 
+        console.log("The name of the institute is " + institute.insName + ", It is loacted in " + institute.location + " & there are total " + institute.student + " students.");
+        document.getElementById("demo").innerHTML = "The name of the institute is " + institute.insName + ", It is loacted in " + institute.location + " & there are total " + institute.student + " students.";
+
+
+
+    </script>
+
+
+</body>
+</html>

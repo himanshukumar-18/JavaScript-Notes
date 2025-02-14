@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading" class="text">DOM (Document Object Model)</h1>
+
+    <p class="para">Paragraph 1</p>
+    <p class="para">Paragraph 2</p>
+    <p class="para">Paragraph 3</p>
+    <p class="para">Paragraph 4</p>
+
+
+
+    <script>
+
+        // try all this code in console
+
+
+
+
+        // it select only first p element from all p elem
+        let txt = document.querySelector("p");
+
+        // apply css on txt elem
+        txt.style.backgroundColor = "yellow";
+
+
+
+
+
+
+        // it is a NodeList (not an Array), Here we can use "forEach" method for make some changes tp each elem
+        document.querySelectorAll("p"); // use this code in console, after that you will understand better
+
+        let para = document.querySelectorAll("p");
+
+        // we can use [] after variable and make changes to only one elem
+        para[2].style.backgroundColor = "green";
+
+        para.forEach(function(elem){
+            elem.style.color = "red";
+        });
+
+
+
+
+
+
+        // it is a HTMLCollection (not an Array), Here we can't use "forEach" method. First we have to convert this HTMLCollection to an Array then we can use forEach method
+        document.getElementsByClassName("para");  // use this code in console, after that you will understand better
+
+        let paraClass = document.getElementsByClassName("para")
+
+        // convert to Array from HTMLCollection
+        let convertArray = Array.from(paraClass);
+
+        console.log(convertArray)
+
+        convertArray.forEach(function(elem){
+            elem.style.margin = "50px 0px";
+        })
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript array concat()</h1>
+    <p>It use for marge multiple array into a single array</p>
+    <p id="demo"></p>
+
+
+    
+    <script>
+
+        // define array variable, inside this array variable we can keep many types of datatypes
+        let arr1 = ["Atanu's", "Coder", "Dream City", 5];
+        let arr2 = ["ABC", "DEF", 123, 456];
+
+        // define concat method in a variable
+        let newArr = arr1.concat(arr2);   // marge two array in a new variable
+
+        // print to console and document
+        console.log(newArr);
+        document.getElementById("demo").innerHTML = newArr;
+
+    </script>
+
+
+
+</body>
+</html>

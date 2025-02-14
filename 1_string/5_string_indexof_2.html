@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>String Index Of</h1>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // store a string into a variable
+        let para="I am a Web Developer";
+
+        // store element from HTML into a variable
+        let demo = document.getElementById("demo");
+
+        // define indexOf para in a variable
+        let pos = para.indexOf("e",9);   // length count start from 0
+        // it search after first "e" letter from the para string. It also work on words
+
+        // print to document and console
+        demo.innerHTML = pos;
+        console.log(pos);
+        
+    </script>
+
+
+</body>
+</html>

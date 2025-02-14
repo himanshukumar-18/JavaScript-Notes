@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Event stop Propagation</h1>
+
+    <ul>
+
+        <li>
+            <img src="https://images.stockcake.com/public/c/7/5/c750d15b-eac3-4543-8cc1-c91d07737bc3_medium/mystical-forest-floor-stockcake.jpg" alt="">
+        </li>
+        <li>
+            <img id="pic" src="https://s.cafebazaar.ir/images/icons/love.dp.images-544f3dff-b0fe-4c7b-bbca-7e37ffdc5e45_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize" alt="">
+        </li>
+        <li>
+            <img src="https://images.stockcake.com/public/0/a/4/0a4e15bd-38ef-48eb-8785-9f2f6c6e0d27_medium/global-cultural-fusion-stockcake.jpg" alt="">
+        </li>
+
+    </ul>
+
+
+
+    <script>
+
+        // Event propagation is 2 types = capturing(true) and bubbling(false)(default)
+
+
+        // Bubbling (it work from down to up side of dom tree, thats why "pic clicked" execute first)
+        document.querySelector("ul").addEventListener("click", function(e){
+
+            console.log("ul clicked")
+
+        }, false);
+
+        document.getElementById("pic").addEventListener("click", function(e){
+
+            console.log("pic clicked")
+            e.stopPropagation()     // it is use for stop the move(propagate) to up elem
+
+        }, false)
+
+    </script>
+
+</body>
+</html>

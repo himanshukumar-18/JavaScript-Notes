@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>While Loop</h1>
+    <p>It create a loop with condition, and inside the block state it's value must be increase </p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define a array variable
+        let arr = ["HTML", "CSS", "JavaScript", "PHP"];
+
+        let index = 0;        // define a variable with initial value
+
+        let output = "";
+
+        // create while loop with condition 
+        while (index < arr.length) {
+
+            // print to consolr and document
+            console.log(`The Component name is ${arr[index]}`);
+
+            output += `The Component name is ${arr[index]}` + "<br>";
+            document.getElementById("demo").innerHTML = output;
+
+            index++;    // increment the value of index one by one
+
+
+        }
+
+    </script>
+
+</body>
+</html>

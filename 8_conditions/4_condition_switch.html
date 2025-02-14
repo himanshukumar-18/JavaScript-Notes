@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Switch Condition</h1>
+    <p>It is use for perform different action based on different conditions</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // define variables
+        let num = 30;
+        let output = "";  // it's a blank variable, where store the condition output data
+
+       
+        switch(num) {
+            case 10 :
+                output = "The Number is 10";
+            break;
+
+            case 20 :
+                output = "The Number is 20";
+            break;
+
+            case 30 :
+                output = "The Number is 30";
+            break;
+
+            case 40 :
+                output = "The Number is 40";
+            break;
+        }
+
+
+        // print to console and document
+        console.log(output);
+        document.getElementById("demo").innerHTML = output
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Create Element 2</h1>
+
+    <ul>
+        <li>HTML</li>
+    </ul>
+
+
+
+    <script>
+
+        // create a function for use multiple time 
+        function createElem(elem) {
+            
+            // create a li elem and store into a variable
+            let newLi = document.createElement("li");
+
+            // set the parameater value to new li
+            newLi.innerHTML = `${elem}`;
+            let ul = document.querySelector("ul");
+
+            // add the new li as a chaild to ul
+            ul.appendChild(newLi);
+        }
+
+        createElem("JavaScript");
+
+
+        // ------ another precess ------- //
+
+        // create a function for use multiple time 
+        function createOptElem(elem) {
+            
+            // create a li elem and store into a variable
+            let newLi = document.createElement("li");
+
+            // create a text node and store into a variable
+            let txtNode = document.createTextNode(elem)
+            // add the txtnode as a chield to newLi
+            newLi.appendChild(txtNode)
+
+            // add the new li as a chaild of ul
+            document.querySelector("ul").appendChild(newLi)
+        }
+
+        createOptElem("Python");
+
+    </script>
+
+
+</body>
+</html>

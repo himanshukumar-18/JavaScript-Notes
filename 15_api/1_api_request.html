@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>XMLHttpRequest: readyState property</h1>
+
+    Value	State	            Description
+    0	    UNSENT	            Client has been created. open() not called yet.
+    1	    OPENED	            open() has been called. (request has been sent)
+    2	    HEADERS_RECEIVED	send() has been called, and headers and status are available. (something we get but we don't know what kind of data we get)
+    3	    LOADING	            Downloading; responseText holds partial data.
+    4	    DONE	            The operation is complete.
+
+
+
+    <script>
+
+
+        // using this method we can send request api and get data
+        const xhr = new XMLHttpRequest();
+
+        // inside this open function we can input two parameaters first is method and second is API link as a string
+        xhr.open('GET', "https://api.github.com/users/atanuray2001");
+
+        // for continuous track state
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState); //change the value of readystate one by one
+
+            // for track state
+            if(xhr.readyState === 4){
+
+                // get all data from api
+                console.log(this.responseText)
+
+                // store all data into a variable
+                let data = this.responseText;
+
+                console.log(data.followers)     // it print undefined, because most of the time the data we get as a string
+
+                // data variable covert to object
+                let finalData = JSON.parse(data)
+
+                console.log(finalData.followers)    // now it print properly
+
+
+            }
+
+        }
+
+        // after run this code reuest will be send
+        xhr.send();
+
+    </script>
+</body>
+</html>  

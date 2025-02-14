@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>String Character At</h1>
+    <p id="demo"></p>
+
+
+
+    <script>
+
+        // store a string into a variable
+        let para="I am a Web Developer";
+
+        // store element from HTML into a variable
+        let demo = document.getElementById("demo");
+
+        // define character position of para in a variable
+        let pos = para.charAt(7);  // char at index start fromm 0
+
+        // print to document and console
+        demo.innerHTML = pos;
+        console.log(pos);
+        
+    </script>
+
+
+</body>
+</html>
