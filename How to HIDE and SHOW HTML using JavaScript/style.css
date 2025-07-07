@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#img {
+    width: 500px;
+    outline: dashed 2px #232323;
+    height: 500px;
+    object-fit: cover;
+    margin: 20px;
+    transform: .3s all;
+}
+
+#button {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 50px;
+    outline: 2px dashed #232323;
+    font-size: 1.6rem;
+    color: #232323;
+    background-color: transparent;
+    transition: .3s all;
+    border: 0;
+    margin: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#button:active {
+    scale: .95;
+}
