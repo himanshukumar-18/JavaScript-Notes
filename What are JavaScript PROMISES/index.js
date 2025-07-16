@@ -35,58 +35,106 @@ console.log(`What are JavaScript PROMISES?`);
 
 
 
-function walkDog() {
+// function walkDog() {
+
+//     return new Promise((resolve, reject) => {
+
+//         setTimeout(() => {
+
+//             const dogWalk = true;
+
+//             if (dogWalk) {
+//                 resolve("You walk the dog.")
+//             } else {
+//                 reject("You didn't walk the dog")
+//             }
+//         }, 1500)
+//     })
+// }
+
+// function cleanKitchen() {
+
+//     return new Promise((resolve, reject) => {
+
+//         setTimeout(() => {
+
+//             const clean = false;
+
+//             if (clean) {
+//                 resolve("You clean the kitchen.")
+//             } else {
+//                 reject("Please clean the kitchen")
+//             }
+//         }, 2500)
+//     })
+// }
+
+// function takeOutTrash() {
+
+//     return new Promise((resolve, reject) => {
+
+//         setTimeout(() => {
+
+//             const trans = false;
+
+//             if (trans) {
+//                 resolve("you take out the trash.")
+//             } else {
+//                 reject("clean the trans")
+//             }
+//         }, 500)
+//     })
+// }
+
+// walkDog().then((value) => { console.log(value); return cleanKitchen() })
+//     .then((value) => { console.log(value); return takeOutTrash() })
+//     .then((value) => { console.log(value); console.log("You finsih all the work") })
+//     .catch((error) => { console.log(error) })
+
+
+
+
+
+
+// pratice
+
+function isRun() {
 
     return new Promise((resolve, reject) => {
 
         setTimeout(() => {
 
-            const dogWalk = true;
+            let manRun = true;
 
-            if (dogWalk) {
-                resolve("You walk the dog.")
+            if (manRun) {
+                resolve("Man is running.")
             } else {
-                reject("You didn't walk the dog")
+                reject("Please Enter Valid Answer")
             }
-        }, 1500)
+        }, 2000);
     })
 }
 
-function cleanKitchen() {
+function isEat() {
 
     return new Promise((resolve, reject) => {
 
         setTimeout(() => {
 
-            const clean = false;
+            let manEating = true;
 
-            if (clean) {
-                resolve("You clean the kitchen.")
+            if (manEating) {
+                resolve("Yes man is eating")
             } else {
-                reject("Please clean the kitchen")
+                reject("Please Enter Valid Answer")
             }
-        }, 2500)
+        }, 1000);
     })
 }
 
-function takeOutTrash() {
+isRun().then((value) => { console.log(value); return isEat(); })
+    .then((value) => { console.log(value); })
 
-    return new Promise((resolve, reject) => {
 
-        setTimeout(() => {
 
-            const trans = false;
 
-            if (trans) {
-                resolve("you take out the trash.")
-            } else {
-                reject("clean the trans")
-            }
-        }, 500)
-    })
-}
-
-walkDog().then((value) => { console.log(value); return cleanKitchen() })
-    .then((value) => { console.log(value); return takeOutTrash() })
-    .then((value) => { console.log(value); console.log("You finsih all the work") })
-    .catch((error) => { console.log(error) })
